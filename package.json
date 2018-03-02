@@ -6,8 +6,8 @@
   "dependencies": {
   },
   "engine": {
-    "node": "*",
-    "npm": "*"
+    "node": "8.9.4",
+    "npm": "5.6.0"
   },
   "scripts": {
     "start": "node code/server.js"
