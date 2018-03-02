@@ -1,13 +1,13 @@
 {
   "name": "nodejs-test-app",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Node.js sample app for OpenShift 3",
   "main": "code/server.js",
   "dependencies": {
   },
   "engine": {
-    "node": "8.9.4",
-    "npm": "5.6.0"
+    "node": "*",
+    "npm": "*"
   },
   "scripts": {
     "start": "node code/server.js"
