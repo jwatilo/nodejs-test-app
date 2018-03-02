@@ -1,22 +1,21 @@
-# Demo app for OpenShift V3
-###(or anything that can consume a Docker image)
+# Node.js Test Application for OpenShift
+This is a simple application that uses a node.js OpenShift S2I template
 
-## How to build this application?
+## Building the Application 
 
 **Download s2i binary from [source-to-image releases](https://github.com/openshift/source-to-image/releases/)**
 
-**Link for downloading v1.1.2 (the latest as of 2016/09/25)**
-
+Example using v1.1.9:
 ```
-wget https://github.com/openshift/source-to-image/releases/download/v1.1.2/source-to-image-v1.1.2-5732fdd-linux-amd64.tar.gz
-tar zxf source-to-image-v1.1.2-5732fdd-linux-amd64.tar.gz
+wget https://github.com/openshift/source-to-image/releases/download/v1.1.9/source-to-image-v1.1.9-db2b4645-linux-amd64.tar.gz
+tar zxf source-to-image-v1.1.9-db2b4645-linux-amd64.tar.gz
 cp s2i ~/bin/
 ```
 
 **Invoke the s2i build.**
 
 ```
-$ $ s2i build https://github.com/jwatilo/nodejs-test-app node nodejs-test-app
+$ s2i build https://github.com/jwatilo/nodejs-test-app node:8.6.4 nodejs-test-app --loglevel 3
 I0928 16:48:48.300441   17306 docker.go:306] Connecting to docker on unix:///var/run/docker.sock
 I0928 16:48:56.597017   17306 docker.go:306] Connecting to docker on unix:///var/run/docker.sock
 I0928 16:48:56.597890   17306 docker.go:306] Connecting to docker on unix:///var/run/docker.sock
@@ -59,5 +58,3 @@ npm info start nodejs-test-app@0.0.1
 
 Server listening on: http://9cd2548dba0c:8080
 ```
-
-**Enjoy!**
