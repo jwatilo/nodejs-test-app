@@ -15,7 +15,7 @@ cp s2i ~/bin/
 **Invoke the s2i build.**
 
 ```
-$ s2i build https://github.com/jwatilo/nodejs-test-app node:8.6.4 nodejs-test-app --loglevel 3
+$ s2i build https://github.com/jwatilo/nodejs-test-app node:8.9.4 nodejs-test-app --loglevel 3
 I0928 16:48:48.300441   17306 docker.go:306] Connecting to docker on unix:///var/run/docker.sock
 I0928 16:48:56.597017   17306 docker.go:306] Connecting to docker on unix:///var/run/docker.sock
 I0928 16:48:56.597890   17306 docker.go:306] Connecting to docker on unix:///var/run/docker.sock
