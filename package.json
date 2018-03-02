@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-test-app",
+  "version": "0.0.1",
+  "description": "Node.js sample app for OpenShift 3",
+  "main": "server.js",
+  "dependencies": {
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwatilo/nodejs-test-app.git"
+  },
+  "author": "John Watilo <john@johnwatilo.com>",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/jwatilo/nodejs-test-app/issues"
+  },
+  "homepage": "https://github.com/jwatilo/nodejs-test-app"
+}
